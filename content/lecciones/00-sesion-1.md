@@ -36,10 +36,10 @@ brew install git
 ---
 # Conceptos
 
-- Versiones como flujos de datos
+- Versiones como flujos de datos, no diferencias solamente
 - Operación totalmente distribuida
 - Integridad
-- 
+- Mayormente solo se añaden datos
 ---
 class: center, middle
 # Zonas
@@ -124,3 +124,5 @@ git pull origin master
 - [Documentación oficial](https://git-scm.com/docs)
 - [Libro oficial](https://git-scm.com/book/es/v2)
 - [Github trainig](https://lab.github.com/courses?tag=Git)
+---
+![En caso de terremoto](https://pbs.twimg.com/media/C-NbJCzXkAAKHu_.jpg)
