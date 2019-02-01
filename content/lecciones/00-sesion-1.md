@@ -1,7 +1,7 @@
 Title: Git
 Author: Mauricio Collazos
 Date: 2019-02-01
-![]()
+![QR](/img/qr-1.png)
 ---
 class: center, middle, light, first-slide
 # Git
@@ -12,6 +12,35 @@ class: center, middle
 # Git
 Git es un sistema de control de versiones (Version Control System) creado en 2005 por Linus Torvalds para satisfacer las necesidades de desarrollo distribuido del kernel de linux. En la actualidad git es el sistema de control de versiones más popular y una herramienta necesaria para el desarrollo de software en equipos. Con este taller se introduce al uso de git para proyectos de software, explicando los comandos más relevantes y realizando prácticas para familiarizar al asistente con todos los conceptos
 ---
+# Instalación
+
+Todos los sistemas operativos
+Instaladores oficiales en [git-scm.com/downloads](https://git-scm.com/downloads)
+
+Manejadores de paquetes
+
+Ubuntu/Debian/Mint
+```bash
+apt install git
+```
+
+Centos/Fedora
+```bash
+yum install git
+```
+
+OS/X
+```bash
+brew install git
+```
+---
+# Conceptos
+
+- Versiones como flujos de datos
+- Operación totalmente distribuida
+- Integridad
+- 
+---
 class: center, middle
 # Zonas
 ![Zonas de Git](/img/zonas.png)
@@ -21,7 +50,13 @@ class: center, middle
 git init
 ```
 ![Git init](/img/init.png)
+
 [Historia y Estructura de git](https://medium.com/@willhayjr/the-architecture-and-history-of-git-a-distributed-version-control-system-62b17dd37742?fbclid=IwAR2Mv5XADMVweZ1K7F0gnEXIBRTjyNTQWgLmZ80ayr_uYbq_SvP3MNUc04Y)
+---
+class: center, middle
+# Estructura de la carpeta git
+![Estructura](/img/estructura.png)
+
 ---
 # Ver el estado del repositorio
 ```bash
@@ -82,3 +117,10 @@ git clone https://github.com/ma0c/hola_mundo_git_de_un_amigo
 git pull origin master
 ```
 ![push](/img/pull.png)
+---
+# Enlaces útiles
+
+- [Cheat Sheet de git](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf)
+- [Documentación oficial](https://git-scm.com/docs)
+- [Libro oficial](https://git-scm.com/book/es/v2)
+- [Github trainig](https://lab.github.com/courses?tag=Git)
