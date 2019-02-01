@@ -1,9 +1,17 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+import os
+import sys
+
+sys.path.append(os.path.dirname(
+        os.path.abspath(__file__)
+    )
+)
+from custom_pelican_markdown_reader.readers import CustomMarkdownReader
 
 AUTHOR = 'Mauricio Collazos'
-SITENAME = 'Curso rápido de GIT'
+SITENAME = 'Curso rápido de Python'
 SITEURL = ''
 
 PATH = 'content'
@@ -33,3 +41,17 @@ DEFAULT_PAGINATION = False
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+
+THEME = os.path.join(
+    os.path.dirname(
+        os.path.abspath(__file__)
+    ),
+    'themes',
+    'remark'
+)
+
+# READERS = {
+#     "md": CustomMarkdownReader
+# }
+
+STATIC_PATHS = ["img"]
