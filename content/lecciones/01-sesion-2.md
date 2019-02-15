@@ -105,6 +105,8 @@ git cherry-pick d11c7519477056b20e4e2686e70f1c21fbc62926
 class: center
 # Trabajo centralizado
 ![Centralized Workflow](img/central_workflow.png)
+
+[Repositorio centralizado](https://github.com/contraslash/curso_rapido_git_icesi_2019_1_centralizado)
 ---
 class: center
 # Ramas por características
