@@ -35,6 +35,8 @@ git reset nuevo_hola_mundo.txt
 git status
 ```
 
+![Reset file](img/reset_file.png)
+
 ---
 # Cambiar el HEAD de la rama actual
 
@@ -43,6 +45,7 @@ git log
 git reset --hard d11c7519477056b20e4e2686e70f1c21fbc62926
 ```
 
+![Reset commit](img/reset_commit.png)
 
 ---
 # Navegar entre versiones
@@ -52,15 +55,17 @@ git log --oneline
 git checkout d11c751
 ```
 
+![Checkout](img/checkout.png)
+
 ---
 # Creación de ramas
 
 ```bash
-
 git branch nueva_rama
 git checkout nueva_rama
 ```
 
+![Branch](img/branch.png)
 
 ---
 # Mezclar ramas
@@ -78,6 +83,8 @@ git merge nueva_rama
 git log --graph --oneline
 ```
 
+![Merge](img/merge.png)
+
 ---
 # Eliminar ramas
 
@@ -89,11 +96,19 @@ git log --graph --oneline
 git push --delete origin nueva_rama
 ```
 
+![branch -d](img/branch_d.png)
+
 ---
-# Algunos comandos útiles para remotos
-```
+# Algunos comandos
+```bash
+# Descargar todos los cambios de un remoto
 git fetch origin
+# Cambiar la URL de un remoto
 git remote set-url origin https://github.com/ma0c/curso_rapido_git
+# Crear puntos de guardado
+git tag -a v1.0 -m "Versión 1.0"
+# Agregar cambios de un commit al head actual
+git cherry-pick d11c7519477056b20e4e2686e70f1c21fbc62926
 ```
 
 ---
@@ -102,6 +117,20 @@ git remote set-url origin https://github.com/ma0c/curso_rapido_git
 - Ramas por características
 - Bifurcaciones
 - GitFlow
+
+[Llenar este formulario](https://goo.gl/forms/7Q2608ln5i1pUhO43)
+---
+class: center
+# Trabajo centralizado
+![Centralized Workflow](img/central_workflow.png)
+---
+class: center
+# Ramas por características
+![Feature branch Workflow](img/feature_workflow.png)
+---
+class: center
+# Ramas por bifurcaciones
+![fork branch Workflow](img/fork_workflow.png)
 ---
 class: center
 # [Gitflow](https://nvie.com/posts/a-successful-git-branching-model/) para trabajo colaborativo
