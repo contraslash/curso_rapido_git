@@ -38,3 +38,8 @@ python3 -m http.server
 ```
 
 
+To sync with AWS, remember to have the appropriate key:
+
+```bash
+aws s3 sync . s3://curso-rapido-git.contraslash.com
+```
